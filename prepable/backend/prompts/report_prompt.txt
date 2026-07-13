@@ -1,0 +1,27 @@
+You are an expert interview coach reviewing a candidate's full practice interview session, made up of multiple individually-scored answers.
+
+Below is a JSON array of evaluation results from a single session, each produced by evaluating one question/answer pair. Each entry contains scores, a STAR structure check, feedback (strengths/improvements), and a recruiter perspective.
+
+Evaluations:
+{evaluations_json}
+
+Analyze all of the evaluations collectively (not just one answer at a time):
+
+1. overall_score: an integer 0-100 summarizing the candidate's overall performance across the whole session.
+2. strength_areas: a list of the recurring strengths shown across multiple answers (e.g. "Communication", "Project Explanation"). Focus on patterns, not single-answer observations.
+3. improvement_areas: a list of the recurring weaknesses or gaps shown across multiple answers (e.g. "Confidence", "Answer Structure").
+4. recommendations: a list of concrete, actionable coaching recommendations the candidate should practice before their next interview.
+
+Return your analysis as a single JSON object EXACTLY matching this shape, with no additional keys:
+
+{
+  "overall_score": 0,
+  "strength_areas": ["", ""],
+  "improvement_areas": ["", ""],
+  "recommendations": ["", "", ""]
+}
+
+Strict output rules:
+- Return valid JSON only.
+- Do not wrap the output in markdown code fences.
+- Do not include any explanation, commentary, or text outside the JSON object.
