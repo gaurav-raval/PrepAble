@@ -14,6 +14,7 @@ from flask_cors import CORS
 
 from routes.evaluation_routes import evaluation_bp
 from routes.resume_routes import resume_bp
+from routes.standard_interview_routes import standard_bp
 
 
 def create_app() -> Flask:
@@ -27,6 +28,7 @@ def create_app() -> Flask:
 
     app.register_blueprint(evaluation_bp)
     app.register_blueprint(resume_bp)
+    app.register_blueprint(standard_bp)
 
     @app.route("/health")
     def health():
