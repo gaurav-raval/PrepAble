@@ -1,0 +1,13 @@
+Diya
+
+Skills:
+Python
+Flask
+SQL
+
+Projects:
+PrepAble
+AksharAlly
+
+Education:
+MCA
